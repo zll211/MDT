@@ -1,0 +1,141 @@
+.account-container {
+  padding: 50px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  .account-main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 50px;
+    min-height: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    .user-head {
+      position: relative;
+      margin: 0 0 16px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+      .img-hover {
+        display: none;
+        position: absolute;
+        content: '';
+        width: 120px;
+        height: 120px;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, .54);
+      }
+      &:hover {
+        .img-hover {
+          display: block;
+        }
+        &:after {
+          position: absolute;
+          content: '上传头像';
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 14px;
+          line-height: 20px;
+          color: #FFFFFF;
+        }
+      }
+    }
+    .user-name {
+      font-size: 18px;
+      line-height: 25px;
+      color: #202020;
+      margin: 0 0 32px 0;
+    }
+    .el-input {
+      width: 210px;
+    }
+    .user-form-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 610px;
+      margin: 28px 0 0 0;
+      font-size: 14px;
+      line-height: 20px;
+      color: #515151;
+      .user-item-label {
+        width: 60px;
+        text-align: right;
+      }
+      .user-item-value {
+        margin: 0 0 0 60px;
+        .sex-item {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          img {
+            width: 14px;
+            height: 14px;
+            margin: 0 10px 0 0;
+          }
+          span {
+            margin: 0 16px 0 0;
+          }
+        }
+      }
+      .user-item-btn {
+        padding: 0;
+      }
+    }
+    .change-user-mobile {
+      margin: 0 0 0 46px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #A2A7AF;
+      .user-mobile-item {
+        margin: 20px 0 0;
+      }
+      .user-mobile-item-label {
+        width: 70px;
+        text-align: right;
+      }
+      .append-code {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0 15px;
+        font-size: 12px;
+        line-height: 17px;
+        cursor: pointer;
+        color: #609EFE;
+        &:before {
+          position: absolute;
+          content: '';
+          left: 0;
+          width: 1px;
+          height: 22px;
+          background: #EFEFEF;
+        }
+      }
+    }
+    .modify-user-pwd {
+      margin: 0 0 0 32px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #A2A7AF;
+      .user-pwd-item {
+        margin: 20px 0 0;
+      }
+      .user-pwd-item-label {
+        width: 84px;
+        text-align: right;
+      }
+    }
+  }
+}

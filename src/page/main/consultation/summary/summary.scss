@@ -1,0 +1,45 @@
+.summary-page {
+  .summary-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+
+    .el-table {
+      margin: 15px 0;
+    }
+
+    .action-icon {
+      font-size: 20px;
+      margin-right: 16px;
+      cursor: pointer;
+      color: #9a9a9a;
+
+      &:hover {
+        color: #609EFE;
+      }
+    }
+  }
+
+  .el-icon-edit {
+    color: #9a9a9a;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      color: #609EFE;
+    }
+  }
+
+  .application-data {
+    color: #609EFE;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .el-dialog__body {
+    padding: 15px;
+  }
+}
+

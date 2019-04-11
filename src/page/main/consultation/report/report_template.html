@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>会诊报告</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .left{
+      float: left;
+    }
+    .right{
+      float: right;
+    }
+    ul {
+      list-style: none;
+    }
+    #reportImgWrapper {
+      margin: 15px auto;
+    }
+    .reportImgList{
+      margin: 0 auto;
+    }
+    .reportImgList li {
+      width: 103mm;
+      margin: 0 1mm;
+    }
+
+    .reportImgList img{
+      width: 103mm;
+    }
+
+    #reportImgWrapper p{
+      font-size: 12px;
+      text-align: center;
+    }
+    .clear{
+      clear: both;
+      height: 0!important;
+    }
+    .report-container {
+      margin: 0 auto;
+      padding: 15mm 15mm 0 15mm;
+      width: 210mm;
+      background: #fff;
+      position: relative;
+    }
+    #header h2{
+      text-align: center;
+      line-height: 30px;
+      font-family: cursive;
+      font-weight: 800;
+      font-size: 26px;
+    }
+
+    #baseInfoTable {
+      width: 210mm;
+      font-family: verdana, arial, sans-serif;
+      font-size: 14px;
+      color: #333333;
+      border-width: 1px;
+      border-color: rgba(200,200,200,0.7);
+      border-collapse: collapse;
+      text-align: center;
+    }
+    #baseInfoTable  tr td:first-child{
+      width:30mm;
+    }
+    #baseInfoTable  tr td:nth-child(2){
+      width:40mm;
+    }
+    #baseInfoTable  tr td:nth-child(3){
+      width:30mm;
+    }
+    #baseInfoTable  tr td:nth-child(4){
+      width:40mm;
+    }
+    #baseInfoTable  tr td:nth-child(5){
+      width:30mm;
+    }
+    #baseInfoTable th {
+      border-width: 1px;
+      padding:5px 0;
+      border-style: solid;
+      border-color: rgba(200,200,200,0.7);
+      background-color: #dedede;
+    }
+
+    #baseInfoTable td {
+      border-width: 1px;
+      padding:5px 0;
+      border-style: solid;
+      border-color: rgba(200,200,200,0.7);
+      background-color: #ffffff;
+    }
+
+  </style>
+</head>
+<body>
+<div class="report-container">
+  <div id="header">
+    <div id="logoWrapper">
+      <img src="../../../../assets/images/hzzt-logo.jpg" height="49" width="41"/>
+      <!--<img src="@/img/czyy_logo.jpg" alt="" width="80">
+      <img src="./img/czyy_qrcode.jpeg" alt="" width="80">
+      <img class="right" src="./img/logo_right.jpg" alt="" width="240">-->
+    </div>
+    <div class="clear"></div>
+    <h2>杭州智团</h2>
+    <h2>多学科联合会诊报告</h2>
+  </div>
+  <div id="baseeInfoTableWrapper">
+    <table id="baseInfoTable">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="font-weight: bold">会诊单号</td>
+        <td>yyhz2019022701</td>
+      </tr>
+      <tr>
+        <td>患者姓名</td>
+        <td>苏长灵</td>
+        <td>性别</td>
+        <td>男</td>
+        <td>年龄</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>申请医院</td>
+        <td>杭州智团医院</td>
+        <td>申请科室</td>
+        <td>肾内科</td>
+        <td>申请医生</td>
+        <td>徐嘻嘻</td>
+      </tr>
+      <tr>
+        <td>申请时间</td>
+        <td style="font-size: 12px">2019-02-25 10:10:10</td>
+        <td>会诊开始时间</td>
+        <td style="font-size: 12px">2019-02-25 10:10:10</td>
+        <td>会诊结束时间</td>
+        <td style="font-size: 12px">2019-02-25 10:10:10</td>
+      </tr>
+      <tr>
+        <td>会诊医生</td>
+        <td colspan="5">徐嘻嘻、张哈哈、王嘿嘿</td>
+      </tr>
+      <tr>
+        <td>会诊目的</td>
+        <td colspan="5">确诊xxxxxxxxxxx</td>
+      </tr>
+    </table>
+  </div>
+  <div id="reportImgWrapper">
+    <table>
+      <tr class="reportImgList">
+        <td>
+          <img src="./img/123123.jpeg" alt="">
+        </td>
+        <td>
+          <img src="./img/234234.png" alt="">
+        </td>
+      </tr>
+      <tr class="reportImgList">
+        <td>
+          <img src="./img/123123.jpeg" alt="">
+        </td>
+        <td>
+          <img src="./img/234234.png" alt="">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id="micSaw">
+    <h4>会诊描述:</h4>
+    <div style="min-height: 50mm;word-break: break-word;display: table;">
+      <div style="display: table-cell;vertical-align: middle;text-indent: 2em;">
+
+      </div>
+    </div>
+    <h4>会诊结论:</h4>
+    <div style="min-height: 20mm;word-break: break-word;display: table;">
+      <div style="display: table-cell;vertical-align: middle;text-align: center;padding: 0 10mm">
+        <!--肾病综合症 糖尿病 线粒细胞增多症肾病综合症 肾病综合症 糖尿病 线粒细胞增多症肾病综合症肾病综合症 糖尿病 线粒细胞增多症肾病综合症肾病综合症 糖尿病 线粒细胞增多症肾病综合症肾病综合症 糖尿病 线粒细胞增多症肾病综合症-->
+      </div>
+    </div>
+  </div>
+  <hr style="margin: 5px 0;border-color: #000000"/>
+  <div id="footer">
+    <div id="doctorWrapper">
+      <p class="left">报告医师：<span>李林</span></p>
+      <p class="right">报告日期：<span>2018-11-07</span></p>
+      <!--<p class="right" style="margin-right: 50px">制片人：<span>程晶晶、杨姗姗、晋若冰、王苒</span></p>-->
+    </div>
+    <div class="clear"></div>
+   <!-- <div class="remark right" style="font-size: 10px;margin-top: 5px;">
+      <p>注：若发现与临床诊断不符时，请立即与实验室联系。电话：021-81885414</p>
+      <p>说明：1.为避免误诊误治，若临床医师对病理诊断存在任何疑问，请尽快与病理医师联系。</p>
+      <p style="text-indent: 3em;">2.少量或碎小组织之病理诊断，有可能未代笔病变组织的全貌及本质，请尽快与病理医师联系。</p>
+      <p style="text-indent: 3em;">3.本报告经医生签名方生效。</p>
+    </div>-->
+  </div>
+
+</div>
+
+</body>
+</html>

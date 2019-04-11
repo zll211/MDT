@@ -1,0 +1,24 @@
+$breakpoints: (
+  'sm': 'only screen and ( max-width: 1025px)',
+  '1200': 'only screen and ( max-width: 1201px)',
+  'md': 'only screen and ( max-width: 1367px)',
+  'lg': 'only screen and ( max-width: 1601px)',
+) !default;
+
+@mixin respond-to($breakpoint) {
+  $query: map-get($breakpoints, $breakpoint);
+
+  @if not $query {
+    @error 'No value found for `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
+  }
+  @media #{if(type-of($query) == 'string', unquote($query), inspect($query))} {
+    @content;
+  }
+}
+
+$mdt-base-default-color: #7b7b7b;
+$mdt-base-active-color: #609EFE;
+$mdt-base-light-color: #9a9a9a;
+$mdt_base_background-color: #f6f6f6;
+$mdt-base-warning-color: #E6A23C;
+$mdt-main-background-color: #F7FAFC;

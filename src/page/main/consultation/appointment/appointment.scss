@@ -1,0 +1,89 @@
+@import "../../../../style/variables";
+
+.appointment-page {
+  position: relative;
+  width: 100%;
+
+  .main-contain {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .appointment-form {
+    border-radius: 5px;
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1200px;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin: 0 auto;
+    position: relative;
+    @include respond-to(lg) {
+      max-width: 1000px;
+      min-width: 1000px;
+    }
+    @include respond-to(md) {
+      max-width: 900px;
+      min-width: 900px;
+    }
+    @include respond-to(sm) {
+      max-width: 800px;
+      min-width: 800px;
+    }
+
+
+    .el-form {
+      padding: 40px 45px;
+      max-width: 740px;
+      margin: 0 auto;
+
+      .el-form-item {
+        border-bottom: 1px solid rgb(235, 238, 243);
+        padding-bottom: 24px;
+      }
+    }
+
+  }
+
+  .action-btn {
+    cursor: pointer;
+    color: #609EFE;
+
+    &:first-child {
+      padding-right: 15px;
+      margin-right: 12px;
+      // border-right: 1px solid rgb(235, 238, 243);
+    }
+  }
+
+  .el-dialog--center .el-dialog__body {
+    padding: 0 30px 25px 30px;
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+
+  .case-info-list {
+    height: 24px;
+    color: #9a9a9a;
+    border-radius: 3px;
+    padding: 0 5px;
+
+    &:hover {
+      background-color: rgba(233, 233, 233, .8);
+
+      span {
+        color: #609EFE;
+      }
+    }
+
+    i {
+      &:hover {
+        color: red;
+        cursor: pointer;
+      }
+    }
+  }
+}

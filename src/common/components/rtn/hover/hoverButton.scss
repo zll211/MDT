@@ -1,0 +1,11 @@
+.hover-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white url(../images/meeting_mini.png) no-repeat center / contain;
+}

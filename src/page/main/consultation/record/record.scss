@@ -1,0 +1,33 @@
+@import "../../../../style/variables";
+
+.record-page {
+  position: relative;
+  width: 100%;
+
+  .main-contain {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .pdf-dialog {
+    .el-dialog {
+      display: flex;
+      flex-direction: column;
+
+      .el-dialog__header {
+        // padding: 10px 20px;
+      }
+
+      .el-dialog__body {
+        flex: 1;
+        padding: 0 20px 10px 20px;
+
+        .el-form-item {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

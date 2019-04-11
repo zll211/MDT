@@ -1,0 +1,106 @@
+@import '../../../style/variables';
+
+.home-page {
+
+  &.main-contain {
+    @include respond-to('1200') {
+      padding: 25px;
+    }
+  }
+  .section {
+    margin-bottom: 28px;
+  }
+  .section-1 {
+    .section-item {
+      border-radius: 5px;
+      background-color: #ffffff;
+      height: 258px;
+
+      &.base-info {
+        .base-info-body {
+          width: 100%;
+          height: 226px;
+          position: relative;
+
+          .user-img {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+          }
+
+          .title {
+            left: 0;
+            top: 30px;
+            padding: 3px 18px 3px 12px;
+            position: absolute;
+            color: #609EFE;
+            border: 1px solid rgba(240, 246, 255, 1);
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+
+          .real-name, .organization-name {
+            color: #515151;
+            margin: 6px 0;
+          }
+
+          .login-time {
+            font-size: 12px;
+            color: #A2A7AF;
+            margin: 6px 0;
+          }
+        }
+
+        .base-info-footer {
+          width: 100%;
+          height: 32px;
+          background: rgba(240, 246, 255, 1);
+
+          p {
+            color: #609EFE;
+            cursor: pointer;
+
+            .el-icon-back {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+
+      &.arrange {
+        max-height: 258px;
+        overflow-y: auto;
+      }
+    }
+
+    .el-col-24:first-child {
+      margin-bottom: 28px;
+    }
+  }
+
+  .section-2 {
+    .section-item {
+      border-radius: 5px;
+      background-color: #ffffff;
+      height: 90px;
+
+      .tip-icon {
+        margin: 0 14px 0 30px;
+      }
+
+      .tip-name {
+        font-size: 18px;
+        color: #A2A7AF;
+      }
+
+      .tip-number {
+        color: #515151;
+        font-size: 18px;
+        margin-right: 30px;
+      }
+    }
+  }
+  .el-col-12 {
+    margin-bottom: 15px;
+  }
+}

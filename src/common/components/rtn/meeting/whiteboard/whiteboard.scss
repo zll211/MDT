@@ -1,0 +1,88 @@
+@import './white.2.0.0-beta.3.css';
+.whiteboard-main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  .whiteboard-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tool-box {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    &-cell {
+      position: relative;
+      width: 32px;
+      height: 32px;
+      margin: 0 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      .step {
+        position: absolute;
+        bottom: 0;
+        width: 8px;
+        height: 2px;
+        background: transparent;
+      }
+    }
+  }
+  .bottom-tools {
+    position: absolute;
+    z-index: 2;
+    left: 16px;
+    bottom: 16px;
+    height: 32px;
+    width: 62px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+    border-radius: 16px;
+    user-select: none;
+    font-size: 12px;
+    color: #a2a7ad;
+    cursor: pointer;
+    transition: width 0.3s;
+    &:hover {
+      width: 104px;
+      .scale-manage {
+        display: flex;
+        opacity: 1;
+        width: 40px;
+        margin-left: 4;
+      }
+    }
+    .scale-num {
+      width: 40px;
+      height: 24px;
+      line-height: 24px;
+      margin-left: 11px;
+    }
+    .scale-manage {
+      display: flex;
+      justify-content: space-around;
+      opacity: 0;
+      width: 0;
+      margin-left: 0;
+      transition: all 0.3s;
+    }
+    .scale-icon {
+      padding: 8px;
+    }
+  }
+}

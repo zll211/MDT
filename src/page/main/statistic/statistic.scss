@@ -1,0 +1,18 @@
+.statistic-page {
+  .chart-main {
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    .Chart1 {
+      width: 100%;
+      height: 300px;
+    }
+    .statistic-month{
+      position: absolute;
+      right: 30px;
+      top: 3px;
+      z-index: 99;
+    }
+  }
+
+}

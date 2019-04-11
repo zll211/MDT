@@ -1,0 +1,153 @@
+.user-container{
+  display:flex;
+  .content-left{
+    width:300px;
+    background-color: white;
+    margin-right:28px;
+    .left-top{
+      height:65px;
+      padding:24px 24px 0 22px;
+    }
+    .left-center{
+      overflow:auto;
+      padding:0 8px 16px 18px;
+      .hospital-tree{
+        font-size:14px;
+        font-weight:400;
+        color:rgba(32,32,32,1);
+        .el-tree-node__content{
+          height:40px;
+          display:flex;
+          position:relative;
+          .custom-tree-node {
+            padding-right: 16px;
+            line-height:40px;
+            .not-db{
+              width: 100%;
+            }
+            .active-blue {
+              color: #609EFE;
+            }
+            img {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+            }
+            .menu-show {
+              display: block;
+              position: absolute;
+              background:rgba(255,255,255,1);
+              box-shadow:0 0 4px 0 rgba(0,0,0,0.12);
+              border-radius:4px;
+              z-index: 20000;
+              padding: 0 14px;
+              box-sizing: border-box;
+              p {
+                color: rgba(32,32,32,1);
+                /*margin: 0;*/
+                font-size: 14px;
+                cursor: pointer;
+                height:40px;
+                line-height:40px;
+                .to-delete{
+                  margin-top:-10px;
+                }
+
+              }
+            }
+            .menu-hide{
+              display:none;
+            }
+          }
+
+        }
+        .el-tree-node{
+          &>.el-tree-node__children{
+            overflow:visible;
+          }
+        }
+      }
+    }
+
+  }
+  .content-right{
+    position:relative;
+    background-color: white;
+    padding:24px;
+    overflow:hidden;
+    .right-top{
+      height:30px;
+      margin-bottom:25px;
+      .operate{
+        .operate-delete{
+          background: url("../../../assets/images/user-delete.png") no-repeat;
+        }
+        .el-button{
+          &.el-button{
+            margin-left:0;
+          }
+        }
+      }
+      .right-search{
+        width:180px;
+      }
+    }
+    .right-center{
+      overflow:auto;
+      .el-table{
+        overflow:auto;
+        .user-operator{
+          display:inline-block;
+          width:24px;
+          height:24px;
+          background-size:cover;
+          margin-right:20px;
+        }
+        .user-edit{
+          background: url("../../../assets/images/user-edit.png");
+        }
+        .user-delete{
+          background: url("../../../assets/images/single-del.png");
+        }
+      }
+      .pagination{
+        margin-top:20px;
+        width:100%;
+        height:40px;
+      }
+    }
+    .user-dialog{
+      .el-dialog__body{
+        padding:30px 48px;
+        .el-form{
+          .el-form-item{
+            margin-bottom:15px;
+          }
+          .el-form-item__error{
+            padding-top:0;
+            top:96%;
+          }
+          .el-input{
+            .el-input__inner{
+              height:36px !important;
+              line-height:36px;
+            }
+          }
+          .el-select{
+            width:100%;
+          }
+          .el-cascader{
+            width:100%;
+          }
+        }
+      }
+      .el-dialog__footer{
+        text-align:center;
+      }
+    }
+  }
+
+  .operate-add{
+    margin-right:22px;
+  }
+}
